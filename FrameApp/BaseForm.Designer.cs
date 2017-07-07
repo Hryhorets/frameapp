@@ -30,23 +30,23 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.btn_enter = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.lbl_server = new System.Windows.Forms.Label();
-            this.tbx_server = new System.Windows.Forms.TextBox();
-            this.tbx_port = new System.Windows.Forms.TextBox();
-            this.lbl_user = new System.Windows.Forms.Label();
-            this.lbl_port = new System.Windows.Forms.Label();
-            this.tbx_user = new System.Windows.Forms.TextBox();
-            this.tbx_password = new System.Windows.Forms.TextBox();
-            this.lbl_password = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btn_enter = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.cbx_preset = new System.Windows.Forms.ComboBox();
             this.tbx_database = new System.Windows.Forms.TextBox();
             this.lbl_database = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cbx_preset = new System.Windows.Forms.ComboBox();
+            this.tbx_password = new System.Windows.Forms.TextBox();
+            this.lbl_password = new System.Windows.Forms.Label();
+            this.tbx_user = new System.Windows.Forms.TextBox();
+            this.lbl_port = new System.Windows.Forms.Label();
+            this.tbx_port = new System.Windows.Forms.TextBox();
+            this.lbl_user = new System.Windows.Forms.Label();
+            this.tbx_server = new System.Windows.Forms.TextBox();
+            this.lbl_server = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -77,6 +77,53 @@
             this.tabPage1.Text = "Вхід";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(62, 91);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(45, 13);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Пароль";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(62, 37);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(34, 13);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Логін";
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.Info;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox2.Location = new System.Drawing.Point(65, 107);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(158, 26);
+            this.textBox2.TabIndex = 2;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Info;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox1.Location = new System.Drawing.Point(65, 53);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(158, 26);
+            this.textBox1.TabIndex = 1;
+            // 
+            // btn_enter
+            // 
+            this.btn_enter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btn_enter.Location = new System.Drawing.Point(65, 141);
+            this.btn_enter.Name = "btn_enter";
+            this.btn_enter.Size = new System.Drawing.Size(158, 30);
+            this.btn_enter.TabIndex = 0;
+            this.btn_enter.Text = "Увійти";
+            this.btn_enter.UseVisualStyleBackColor = true;
+            this.btn_enter.Click += new System.EventHandler(this.btn_enter_Click);
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.cbx_preset);
@@ -98,101 +145,19 @@
             this.tabPage2.Text = "Параметри";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // btn_enter
+            // cbx_preset
             // 
-            this.btn_enter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btn_enter.Location = new System.Drawing.Point(65, 141);
-            this.btn_enter.Name = "btn_enter";
-            this.btn_enter.Size = new System.Drawing.Size(158, 30);
-            this.btn_enter.TabIndex = 0;
-            this.btn_enter.Text = "Увійти";
-            this.btn_enter.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Info;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(65, 53);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(158, 26);
-            this.textBox1.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Info;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(65, 107);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(158, 26);
-            this.textBox2.TabIndex = 2;
-            // 
-            // lbl_server
-            // 
-            this.lbl_server.AutoSize = true;
-            this.lbl_server.Location = new System.Drawing.Point(7, 43);
-            this.lbl_server.Name = "lbl_server";
-            this.lbl_server.Size = new System.Drawing.Size(44, 13);
-            this.lbl_server.TabIndex = 0;
-            this.lbl_server.Text = "Сервер";
-            // 
-            // tbx_server
-            // 
-            this.tbx_server.BackColor = System.Drawing.SystemColors.Info;
-            this.tbx_server.Location = new System.Drawing.Point(10, 59);
-            this.tbx_server.Name = "tbx_server";
-            this.tbx_server.Size = new System.Drawing.Size(212, 20);
-            this.tbx_server.TabIndex = 1;
-            // 
-            // tbx_port
-            // 
-            this.tbx_port.BackColor = System.Drawing.SystemColors.Info;
-            this.tbx_port.Location = new System.Drawing.Point(228, 59);
-            this.tbx_port.Name = "tbx_port";
-            this.tbx_port.Size = new System.Drawing.Size(48, 20);
-            this.tbx_port.TabIndex = 3;
-            // 
-            // lbl_user
-            // 
-            this.lbl_user.AutoSize = true;
-            this.lbl_user.Location = new System.Drawing.Point(7, 84);
-            this.lbl_user.Name = "lbl_user";
-            this.lbl_user.Size = new System.Drawing.Size(65, 13);
-            this.lbl_user.TabIndex = 2;
-            this.lbl_user.Text = "Користувач";
-            // 
-            // lbl_port
-            // 
-            this.lbl_port.AutoSize = true;
-            this.lbl_port.Location = new System.Drawing.Point(225, 43);
-            this.lbl_port.Name = "lbl_port";
-            this.lbl_port.Size = new System.Drawing.Size(32, 13);
-            this.lbl_port.TabIndex = 4;
-            this.lbl_port.Text = "Порт";
-            // 
-            // tbx_user
-            // 
-            this.tbx_user.BackColor = System.Drawing.SystemColors.Info;
-            this.tbx_user.Location = new System.Drawing.Point(10, 100);
-            this.tbx_user.Name = "tbx_user";
-            this.tbx_user.Size = new System.Drawing.Size(266, 20);
-            this.tbx_user.TabIndex = 5;
-            // 
-            // tbx_password
-            // 
-            this.tbx_password.BackColor = System.Drawing.SystemColors.Info;
-            this.tbx_password.Location = new System.Drawing.Point(10, 142);
-            this.tbx_password.Name = "tbx_password";
-            this.tbx_password.Size = new System.Drawing.Size(266, 20);
-            this.tbx_password.TabIndex = 7;
-            // 
-            // lbl_password
-            // 
-            this.lbl_password.AutoSize = true;
-            this.lbl_password.Location = new System.Drawing.Point(7, 126);
-            this.lbl_password.Name = "lbl_password";
-            this.lbl_password.Size = new System.Drawing.Size(45, 13);
-            this.lbl_password.TabIndex = 6;
-            this.lbl_password.Text = "Пароль";
+            this.cbx_preset.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_preset.FormattingEnabled = true;
+            this.cbx_preset.Items.AddRange(new object[] {
+            "Сервер FH",
+            "Сервер NNG",
+            "Ручні налаштування"});
+            this.cbx_preset.Location = new System.Drawing.Point(10, 12);
+            this.cbx_preset.Name = "cbx_preset";
+            this.cbx_preset.Size = new System.Drawing.Size(266, 21);
+            this.cbx_preset.TabIndex = 10;
+            this.cbx_preset.SelectedIndexChanged += new System.EventHandler(this.cbx_preset_SelectedIndexChanged);
             // 
             // tbx_database
             // 
@@ -211,36 +176,73 @@
             this.lbl_database.TabIndex = 8;
             this.lbl_database.Text = "База даних";
             // 
-            // label6
+            // tbx_password
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(62, 37);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(34, 13);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Логін";
+            this.tbx_password.BackColor = System.Drawing.SystemColors.Info;
+            this.tbx_password.Location = new System.Drawing.Point(10, 142);
+            this.tbx_password.Name = "tbx_password";
+            this.tbx_password.Size = new System.Drawing.Size(266, 20);
+            this.tbx_password.TabIndex = 7;
             // 
-            // label7
+            // lbl_password
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(62, 91);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 13);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Пароль";
+            this.lbl_password.AutoSize = true;
+            this.lbl_password.Location = new System.Drawing.Point(7, 126);
+            this.lbl_password.Name = "lbl_password";
+            this.lbl_password.Size = new System.Drawing.Size(45, 13);
+            this.lbl_password.TabIndex = 6;
+            this.lbl_password.Text = "Пароль";
             // 
-            // cbx_preset
+            // tbx_user
             // 
-            this.cbx_preset.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbx_preset.FormattingEnabled = true;
-            this.cbx_preset.Items.AddRange(new object[] {
-            "Сервер FreeHost",
-            "Сервер NNGVU",
-            "Ручні налаштування"});
-            this.cbx_preset.Location = new System.Drawing.Point(10, 12);
-            this.cbx_preset.Name = "cbx_preset";
-            this.cbx_preset.Size = new System.Drawing.Size(266, 21);
-            this.cbx_preset.TabIndex = 10;
+            this.tbx_user.BackColor = System.Drawing.SystemColors.Info;
+            this.tbx_user.Location = new System.Drawing.Point(10, 100);
+            this.tbx_user.Name = "tbx_user";
+            this.tbx_user.Size = new System.Drawing.Size(266, 20);
+            this.tbx_user.TabIndex = 5;
+            // 
+            // lbl_port
+            // 
+            this.lbl_port.AutoSize = true;
+            this.lbl_port.Location = new System.Drawing.Point(225, 43);
+            this.lbl_port.Name = "lbl_port";
+            this.lbl_port.Size = new System.Drawing.Size(32, 13);
+            this.lbl_port.TabIndex = 4;
+            this.lbl_port.Text = "Порт";
+            // 
+            // tbx_port
+            // 
+            this.tbx_port.BackColor = System.Drawing.SystemColors.Info;
+            this.tbx_port.Location = new System.Drawing.Point(228, 59);
+            this.tbx_port.Name = "tbx_port";
+            this.tbx_port.Size = new System.Drawing.Size(48, 20);
+            this.tbx_port.TabIndex = 3;
+            // 
+            // lbl_user
+            // 
+            this.lbl_user.AutoSize = true;
+            this.lbl_user.Location = new System.Drawing.Point(7, 84);
+            this.lbl_user.Name = "lbl_user";
+            this.lbl_user.Size = new System.Drawing.Size(65, 13);
+            this.lbl_user.TabIndex = 2;
+            this.lbl_user.Text = "Користувач";
+            // 
+            // tbx_server
+            // 
+            this.tbx_server.BackColor = System.Drawing.SystemColors.Info;
+            this.tbx_server.Location = new System.Drawing.Point(10, 59);
+            this.tbx_server.Name = "tbx_server";
+            this.tbx_server.Size = new System.Drawing.Size(212, 20);
+            this.tbx_server.TabIndex = 1;
+            // 
+            // lbl_server
+            // 
+            this.lbl_server.AutoSize = true;
+            this.lbl_server.Location = new System.Drawing.Point(7, 43);
+            this.lbl_server.Name = "lbl_server";
+            this.lbl_server.Size = new System.Drawing.Size(44, 13);
+            this.lbl_server.TabIndex = 0;
+            this.lbl_server.Text = "Сервер";
             // 
             // BaseForm
             // 
